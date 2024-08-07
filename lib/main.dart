@@ -1,4 +1,4 @@
-import 'package:bennett_date/view/navbar.dart';
+import 'package:bennett_date/view/components/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
