@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
@@ -17,7 +16,8 @@ class _ProfilePageState extends State<ProfilePage> {
         appBar: AppBar(
           title: Text(
             'Profile',
-            style: GoogleFonts.nunito(fontSize: 32, color: Colors.black),
+            style: GoogleFonts.nunito(
+                fontSize: 32, color: Colors.black, fontWeight: FontWeight.bold),
           ),
         ),
         body: Column(
@@ -32,14 +32,14 @@ class _ProfilePageState extends State<ProfilePage> {
                     padding: EdgeInsets.all(5.0.sp),
                     child: Center(
                       child: CircleAvatar(
-                        radius: 40.sp,
+                        radius: 41.sp,
                         backgroundImage:
                             const AssetImage('assets/images/hottie.jpg'),
                       ),
                     ),
                   ),
                   const Text(
-                    'Madhav Rand',
+                    'Madhav',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   const Text('Delhi NCR'),
@@ -49,7 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             Divider(
               color: Colors.red.shade100,
-              thickness: 5,
+              thickness: 8,
             ),
             Align(
               alignment: Alignment.centerLeft,
@@ -68,7 +68,7 @@ class _ProfilePageState extends State<ProfilePage> {
             const ListTile(
               leading: Icon(Icons.person),
               title: Text('Full Name'),
-              subtitle: Text('Madhav Rand'),
+              subtitle: Text('Madhav'),
             ),
             const ListTile(
               leading: Icon(Icons.email),
@@ -88,7 +88,7 @@ class _ProfilePageState extends State<ProfilePage> {
             const ListTile(
               leading: Icon(Icons.link),
               title: Text('Social URL'),
-              subtitle: Text('Facebook.com/Madhav_Rand'),
+              subtitle: Text('Facebook.com/Madhav'),
             ),
           ],
         ));
