@@ -1,8 +1,12 @@
+import 'package:bennett_date/view/profile/screen/home.dart';
 import 'package:bennett_date/view/profile/screen/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+// Import the SwipePage
 
 class Example extends StatefulWidget {
+  const Example({super.key});
+
   @override
   _ExampleState createState() => _ExampleState();
 }
@@ -11,20 +15,17 @@ class _ExampleState extends State<Example> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.w600);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Home',
-      style: optionStyle,
-    ),
-    Text(
+  static final List<Widget> _widgetOptions = <Widget>[
+    madhav(),
+    const Text(
       'Likes',
       style: optionStyle,
     ),
-    Text(
+    const Text(
       'Search',
       style: optionStyle,
     ),
-    ProfilePage()
+    const ProfilePage()
   ];
 
   @override
@@ -53,8 +54,8 @@ class _ExampleState extends State<Example> {
               gap: 8,
               activeColor: Colors.black,
               iconSize: 24,
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-              duration: Duration(milliseconds: 400),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+              duration: const Duration(milliseconds: 400),
               tabBackgroundColor: Colors.grey[100]!,
               color: Colors.black,
               tabs: const [

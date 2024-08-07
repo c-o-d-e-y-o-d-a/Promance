@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
@@ -17,7 +16,8 @@ class _ProfilePageState extends State<ProfilePage> {
         appBar: AppBar(
           title: Text(
             'Profile',
-            style: GoogleFonts.nunito(fontSize: 32, color: Colors.black),
+            style: GoogleFonts.nunito(
+                fontSize: 32, color: Colors.black, fontWeight: FontWeight.bold),
           ),
         ),
         body: SingleChildScrollView(
