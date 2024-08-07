@@ -36,7 +36,8 @@ dependencies:
   google_fonts: 
   sizer:
   google_nav_bar:
-  flutter_tinder_swipe: ^0.0.4
+  card_swiper:
+  flutter_card_swiper: ^7.0.1
 
 dev_dependencies:
   flutter_test:

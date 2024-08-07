@@ -16,7 +16,7 @@ class _ExampleState extends State<Example> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.w600);
   static final List<Widget> _widgetOptions = <Widget>[
-    const SwipePage(),
+    madhav(),
     const Text(
       'Likes',
       style: optionStyle,
